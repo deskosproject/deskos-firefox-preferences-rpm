@@ -1,0 +1,3 @@
+= DeskOS: deskos-firefox-preferences RPM
+
+This is the _deskos-firefox-preferences_ RPM package for the *DeskOS* operating system.
