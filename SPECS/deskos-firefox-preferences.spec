@@ -1,6 +1,6 @@
 Name:           deskos-firefox-preferences
 Version:        0.2.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Configure Firefox preferences for DeskOS
 
 Group:          Applications/Internet
@@ -9,7 +9,6 @@ URL:            https://deskosproject.org
 Source0:        all-deskos.js
 Source1:        deskos-firefox-theme-default-prefs.js
 
-BuildArch:      noarch
 Requires:       firefox
 
 %description
@@ -26,6 +25,9 @@ cp -a %{SOURCE1} $RPM_BUILD_ROOT/%{_libdir}/firefox/defaults/preferences/
 %{_libdir}/firefox/defaults/preferences/deskos-firefox-theme-default-prefs.js
 
 %changelog
+* Thu Dec 22 2016 Ricardo Arguello <rarguello@deskosproject.org> - 0.2.0-2
+- Removed BuildArch: noarch
+
 * Tue Dec 20 2016 Ricardo Arguello <rarguello@deskosproject.org> - 0.2.0-1
 - Set DeskOS Firefox Theme as default
 
